@@ -1,0 +1,49 @@
+{
+  "name": "@keyur-gondaliya/3d-sun",
+  "author": "Keyur Gondaliya",
+  "version": "0.1.9",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJs --outDir dist/cjs"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/three": "^0.158.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.158.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Keyur-Gondaliya/3D-Space.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "Threejs-sun"
+  ],
+  "bugs": {
+    "url": "https://github.com/Keyur-Gondaliya/3D-Space/issues"
+  },
+  "homepage": "https://github.com/Keyur-Gondaliya/3D-Space/blob/master/README.md"
+}

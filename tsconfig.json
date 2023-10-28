@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true, // allow to use export as * and Name both (import * as keyur from "..." )
+    "declaration": true, // allow ts file format
+    "esModuleInterop": true, // fixes basic version error
+    "jsx": "react-jsx", //tsx to jsx
+    "lib": ["ES5", "ES2015", "ES2016", "dom", "esnext"], //targeted library where your function will work (dom important)
+    "types": ["node"],
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "outDir": "dist/esm",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
