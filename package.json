@@ -1,7 +1,7 @@
 {
   "name": "@keyur-gondaliya/3d-sun",
   "author": "Keyur Gondaliya",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Keyur-Gondaliya/3D-Space.git"
+    "url": "https://github.com/Keyur-Gondaliya/npm-3D-sun.git"
   },
   "keywords": [
     "react",
@@ -43,7 +43,7 @@
     "Threejs-sun"
   ],
   "bugs": {
-    "url": "https://github.com/Keyur-Gondaliya/3D-Space/issues"
+    "url": "https://github.com/Keyur-Gondaliya/npm-3D-sun/issues"
   },
-  "homepage": "https://github.com/Keyur-Gondaliya/3D-Space/blob/master/README.md"
+  "homepage": "https://github.com/Keyur-Gondaliya/npm-3D-sun/blob/master/README.md"
 }
