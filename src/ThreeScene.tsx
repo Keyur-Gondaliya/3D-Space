@@ -11,30 +11,30 @@ export const ThreeScene = ({
   rotationSpeed,
   orbitColor,
 }: Props): any => {
-  backgroundImage =
+  let backgroundImageInner: string =
     backgroundImage && backgroundImage.length
       ? backgroundImage
       : "https://vzila.github.io/Images/b1.jpg";
 
-  sunUVLayoutImage =
+  let sunUVLayoutImageInner: string =
     sunUVLayoutImage && sunUVLayoutImage
       ? sunUVLayoutImage
       : "https://vzila.github.io/Images/l2.jpg";
 
-  sunTextureImage =
+  let sunTextureImageInner: string =
     sunTextureImage && sunTextureImage
       ? sunTextureImage
       : "https://vzila.github.io/Images/l3.jpg";
 
-  starCount =
+  let starCountInner: number =
     starCount && starCount > 0 && starCount < 100000 ? starCount : 1000;
 
-  rotationSpeed =
+  let rotationSpeedInner =
     rotationSpeed && rotationSpeed > 0 && rotationSpeed < 1
       ? rotationSpeed
       : 0.004;
 
-  orbitColor =
+  let orbitColorInner: number =
     orbitColor &&
     String(orbitColor).length > 0 &&
     String(orbitColor).length <= 8
@@ -62,7 +62,7 @@ export const ThreeScene = ({
     scene.add(ambientLight);
 
     if (!disableBackground) {
-      const spaceTexture = new THREE.TextureLoader().load(backgroundImage);
+      const spaceTexture = new THREE.TextureLoader().load(backgroundImageInner);
       spaceTexture.anisotropy = 16;
       spaceTexture.encoding = THREE.sRGBEncoding;
       scene.background = spaceTexture;
@@ -71,7 +71,7 @@ export const ThreeScene = ({
     const atmosphereMaterial = new THREE.MeshStandardMaterial({
       transparent: true,
       opacity: 0.2,
-      color: orbitColor,
+      color: orbitColorInner,
     });
 
     const atmosphereSphere = new THREE.Mesh(
@@ -91,8 +91,8 @@ export const ThreeScene = ({
 
     const geometry = new THREE.SphereGeometry(5, 50, 50);
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load(sunUVLayoutImage);
-    const normalTexture = textureLoader.load(sunTextureImage);
+    const texture = textureLoader.load(sunUVLayoutImageInner);
+    const normalTexture = textureLoader.load(sunTextureImageInner);
 
     const material = new THREE.MeshStandardMaterial({
       map: texture,
@@ -109,7 +109,7 @@ export const ThreeScene = ({
     const starMaterial = new THREE.PointsMaterial({ color: 0xffffff });
     const starVertices: number[] = [];
 
-    for (let i = 0; i < starCount; i++) {
+    for (let i = 0; i < starCountInner; i++) {
       const x = (Math.random() - 0.5) * 2000;
       const y = (Math.random() - 0.5) * 2000;
       const z = (Math.random() - 0.5) * 2000;
@@ -126,7 +126,7 @@ export const ThreeScene = ({
 
     function animate() {
       requestAnimationFrame(animate);
-      sphere.rotation.y += rotationSpeed;
+      sphere.rotation.y += rotationSpeedInner;
       controls.update();
       renderer.render(scene, camera);
     }

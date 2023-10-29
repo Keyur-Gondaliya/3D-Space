@@ -1,7 +1,7 @@
 {
   "name": "@keyur-gondaliya/3d-sun",
   "author": "Keyur Gondaliya",
-  "version": "0.1.10",
+  "version": "0.1.12",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
