@@ -12,12 +12,12 @@ npm install @keyur-gondaliya/3d-sun three
 
 ```bash
 import React from 'react';
-import ThreeDimensionalSun from '@keyur-gondaliya/3d-sun';
+import { ThreeScene }  from '@keyur-gondaliya/3d-sun';
 
 const YourComponent = () => {
   return (
     <div>
-      <ThreeDimensionalSun
+      <ThreeScene
         backgroundImage="URL_TO_YOUR_BACKGROUND_IMAGE"
         sunUVLayoutImage="URL_TO_YOUR_SUN_UV_IMAGE"
         sunTextureImage="URL_TO_YOUR_SUN_TEXTURE_IMAGE"
@@ -64,7 +64,7 @@ Color input in the hexadecimal format. Example: 0xff0000 (Red)
 ## Example
 
 ```bash
-<ThreeDimensionalSun
+<ThreeScene
   backgroundImage="https://example.com/background.jpg"
   sunUVLayoutImage="https://example.com/uvlayout.jpg"
   sunTextureImage="https://example.com/suntexture.jpg"
